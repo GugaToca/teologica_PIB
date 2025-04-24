@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TeoLógica</title>
+  <link rel="icon" href="logo_icon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+
+    :root {
+      --cor-primaria: #00c4c9;
+      --cor-secundaria: #ffc93c;
+      --cor-texto: #e5e5e5;
+      --cor-fundo: #091520;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+}
+
+
+    body {
+      font-family: 'Outfit', sans-serif;
+      background-color: var(--cor-fundo);
+      color: var(--cor-texto);
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 2rem;
+      background-color: var(--cor-fundo);
+      border-bottom: 1px solid var(--cor-primaria);
+    }
+
+    header img {
+      height: 100px;
+      width: 120px;
+    }
+
+    nav a {
+      margin-left: 1.5rem;
+      text-decoration: none;
+      color: var(--cor-texto);
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--cor-secundaria);
+    }
+
+    .hero {
+      text-align: center;
+      padding: 4rem 2rem;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      color: var(--cor-primaria);
+    }
+
+    .hero p {
+      font-size: 1.25rem;
+      margin-top: 1rem;
+      color: var(--cor-texto);
+    }
+
+    .devocionais {
+      padding: 2rem;
+    }
+
+    .devocionais h2 {
+      color: var(--cor-secundaria);
+      margin-bottom: 1.8rem;
+      text-align: center;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background-color: #11202e;
+      border-radius: 12px;
+      padding: 2.5rem;
+      transition: transform 0.3s ease;
+      box-shadow: 0 0 10px #00c6c9ab;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      margin-bottom: 0.5rem;
+      color: var(--cor-primaria);
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      margin-bottom: 1rem;
+    }
+
+    .card a {
+      color: var(--cor-secundaria);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .video-card iframe {
+      width: 100%;
+      height: 200px;
+      border: none;
+      border-radius: 8px;
+    }
+    /*aqui começa o estilo da rolagem dos cards*/
+    
+
+/*aqui termina o estilo dos cards*/
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2.2rem;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <div style="display: flex; align-items: center; gap: 1rem;">
+      <img src="logo_teologica.png" alt="Logo TeoLógica" style="height: 100px; width: 120px;">
+      <img src="logo_pib_semfundo.png" alt="Logo PIB" style="height: 108px; width: 115px; border-radius: 300%;">
+    </div>
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="#devocionais">Devocionais</a>
+        <a href="#artigos">Artigos</a>
+        <a href="#videos">Vídeos</a>
+        <a href="#materiais">Materiais</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Bem-vindo ao Projeto Teo<span style="color: #ffc93c;">Lógica</span></h1>
+    <p>Reflexões, estudos e materiais sobre Teologia e vida cristã, levando a mensagem da palavra para todos os cantos.</p>
+  </section>
+
+  <section class="devocionais" id="devocionais" style="margin-top: 5rem;"> 
+    <h2>Devocionais Recentes</h2>
+    <div class="cards">
+      <div class="card"> <!--Card 1-->
+        <h3>Confiança em Meio à Tempestade</h3>
+        <p>“Ao meditarmos nessa passagem, somos chamados a uma fé mais profunda e a uma dependência maior na soberania de Cristo.”</p>
+        <a href="devocional-tempestade.html">Ler mais</a>
+      </div>
+      <div class="card"> <!--Card 2-->
+        <h3>Graça que Transforma</h3>
+        <p>Embora não sejamos salvos por obras, somos salvos para boas obras. Cada ato de bondade, serviço e amor é um reflexo da graça que age em nós. Busque oportunidades para demonstrar essa graça no seu dia a dia.</p>
+        <a href="devocional-graca-transforma.html">Ler mais</a>
+      </div>
+      <div class="card"> <!--Card 3-->
+        <h3>A Esperança do Evangelho</h3>
+        <p>Assim como a âncora impede que um navio seja levado pelas ondas, a esperança do evangelho nos estabiliza em meio às tempestades da vida. Essa esperança não é baseada em nossas próprias forças, mas no poder de Deus que sustenta.</p>
+        <a href="devocional-esperanca-evangelho.html">Ler mais</a>
+      </div>
+    </div>
+
+    <section class="artigos" id="artigos" style="margin-top: 5rem;">
+      <h2>Artigos Teológicos</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>A Trindade na Prática Cristã</h3>
+          <p>A doutrina da Trindade não é apenas um mistério teológico, mas uma realidade prática que molda a vida cristã em todos os aspectos: adoração, comunhão e missão.</p>
+          <a href="artigo-trindade-pratica.html">Ler artigo</a>
+        </div>
+        <div class="card">
+          <h3>Sola Scriptura Hoje</h3>
+          <p>A Sola Scriptura não é apenas um lema histórico da Reforma, mas uma realidade viva que molda a vida cristã hoje. Em um mundo de múltiplas vozes e ideologias, ela nos aponta para a suficiência e a autoridade das Escrituras como a Palavra de Deus</p>
+          <a href="artigo-sola-scriptura.html">Ler artigo</a>
+        </div>
+        <div class="card">
+          <h3>A Esperança Cristã: Encontrando Esperança em Cristo</h3>
+          <p>A esperança cristã, fundamentada em Cristo e sustentada pela graça de Deus, é um presente inestimável. Ela não apenas aponta para a eternidade, mas também capacita os crentes a enfrentar o presente com coragem e alegria.</p>
+          <a href="artigo-reino-de-deus.html">Ler artigo</a>
+        </div>
+      </div>
+    </section>
+  
+
+      <section class="videos" id="videos" style="margin-top: 5rem;">
+        <h2>Vídeos Recentes</h2>
+        <div class="cards">
+            <div class="card video-card">
+                <a href="https://www.youtube.com/watch?v=3MnEMzx5LQ8" target="_blank" rel="noopener noreferrer">
+                  <img src="https://img.youtube.com/vi/3MnEMzx5LQ8/hqdefault.jpg" alt="Miniatura do vídeo Oração e Intimidade com Deus" style="width: 100%; border-radius: 8px;">
+                  <h3 style="margin-top: 0.8rem; color: var(--cor-primaria);">"Vencendo Nossos Inimigos Parte 1".</h3>
+                </a>
+              </div>
+              
+              <div class="card video-card">
+                <a href="https://www.youtube.com/watch?v=Jfz97xAgyKk&t=1142s" target="_blank" rel="noopener noreferrer">
+                  <img src="https://img.youtube.com/vi/Jfz97xAgyKk/hqdefault.jpg" alt="Miniatura do vídeo Oração e Intimidade com Deus" style="width: 100%; border-radius: 8px;">
+                  <h3 style="margin-top: 0.8rem; color: var(--cor-primaria);">"Vencendo Nossos Inimigos Parte 2".</h3>
+                </a>
+              </div>
+
+              <div class="card video-card">
+                <a href="https://www.youtube.com/watch?v=cS-Rp7mjy_Y" target="_blank" rel="noopener noreferrer">
+                  <img src="https://img.youtube.com/vi/cS-Rp7mjy_Y/hqdefault.jpg" alt="Miniatura do vídeo Oração e Intimidade com Deus" style="width: 100%; border-radius: 8px;">
+                  <h3 style="margin-top: 0.8rem; color: var(--cor-primaria);">"O pecado adoece, e a Graça cura".</h3>
+                </a>
+              </div>
+
+      </section>
+
+      <section class="materiais" id="materiais" style="margin-top: 5rem;">
+        <h2>Materiais para Download</h2>
+        <div class="cards">
+          <div class="card">
+            <h3>Plano de Leitura Bíblica</h3>
+            <p>Organize sua rotina devocional com esse guia de leitura anual.</p>
+            <a href="materiais.html">Ver Materiais</a>
+          </div>
+          <div class="card">
+            <h3>Imagens com temas para Ensino</h3>
+            <p>Material para grupos pequenos ou aulas sobre fundamentos da fé cristã.</p>
+            <a href="#">Baixar Apresentação</a>
+          </div>
+          <div class="card">
+            <h3>Imagem: Versículo do Dia</h3>
+            <p>Baixe e compartilhe versículos inspiradores nas redes sociais.</p>
+            <a href="#">Baixar Imagem</a>
+          </div>
+        </div>
+      </section>
+
+      <footer style="background-color: var(--cor-fundo); border-top: 1px solid var(--cor-primaria); text-align: center; padding: 1.5rem 0; margin-top: 4rem;">
+        <p style="color: var(--cor-texto); font-size: 0.95rem;">
+          © 2025 Projeto TeoLógica | Desenvolvido para a Igreja de Jesus Cristo
+        </p>
+      </footer>
+</body>
+</html>

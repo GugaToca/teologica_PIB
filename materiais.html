@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Materiais para Download | TeoLógica</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --cor-primaria: #00c4c9;
+      --cor-secundaria: #ffc93c;
+      --cor-texto: #e5e5e5;
+      --cor-fundo: #091520;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Outfit', sans-serif;
+      background-color: var(--cor-fundo);
+      color: var(--cor-texto);
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 2rem;
+      background-color: var(--cor-fundo);
+      border-bottom: 1px solid var(--cor-primaria);
+    }
+
+    header img {
+      height: 100px;
+      width: 120px;
+    }
+
+    nav a {
+      margin-left: 1.5rem;
+      text-decoration: none;
+      color: var(--cor-texto);
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--cor-secundaria);
+    }
+
+    .hero {
+      text-align: center;
+      padding: 4rem 2rem;
+    }
+
+    .hero h1 {
+      font-size: 2.8rem;
+      color: var(--cor-primaria);
+    }
+
+    .conteudo {
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+      line-height: 1.8;
+    }
+
+    .pdf-link {
+      display: block;
+      margin: 1rem 0;
+      font-size: 1.2rem;
+      color: var(--cor-secundaria);
+      text-decoration: none;
+    }
+
+    .pdf-link:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      background-color: var(--cor-fundo);
+      border-top: 1px solid var(--cor-primaria);
+      text-align: center;
+      padding: 1.5rem 0;
+      margin-top: 4rem;
+    }
+
+    footer p {
+      color: var(--cor-texto);
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo_teologica.png" alt="Logo TeoLógica">
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="index.html#devocionais">Devocionais</a>
+      <a href="index.html#artigos">Artigos</a>
+      <a href="index.html#videos">Vídeos</a>
+      <a href="index.html#materiais">Materiais</a>
+      <a href="sobre-autor.html">Autor</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Materiais para Download</h1>
+  </section>
+
+  <section class="conteudo">
+    <p>Aqui você encontra materiais em PDF para estudo, reflexão e crescimento espiritual. Clique para abrir em uma nova aba:</p>
+
+    <a href="Plano de Leitura-Tiago 1 ao 5.pdf" target="_blank" rel="noopener noreferrer" class="pdf-link">📄 Livro de Tiago - Plano de Leitura</a>
+    <a href="Carta aos Romanos- Plano de Leitura.pdf" target="_blank" rel="noopener noreferrer" class="pdf-link">📄 Carta aos Romanos - Plano de Leitura</a>
+
+  </section>
+
+  <footer>
+    <p>© 2025 TeoLógica | Desenvolvido por Gustavo Tocalino</p>
+  </footer>
+</body>
+</html>
